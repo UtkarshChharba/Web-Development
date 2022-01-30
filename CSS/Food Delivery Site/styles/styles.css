@@ -1,0 +1,188 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    position:sticky;
+    align-items: center;
+    top:0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.1;
+}
+.profile-pic{
+    margin:0px 10px;
+    width: 40px;
+    height:40px;
+}
+/* Navbar Styling And logo */
+#navbar ul{
+    display:flex; 
+}
+#navbar ul li{
+    list-style: none;   
+}
+#navbar ul li a{
+    color:rgb(18, 107, 134);
+    display:block;
+    padding:3px 22px;
+    border-radius:20px;
+    text-decoration: none;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size:10px;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    display:block;
+    padding:3px 22px;
+    border-radius:20px;
+    text-decoration: none;
+}
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:6px 200px;
+    height: 850px;
+    justify-content: center; 
+    align-items: center; 
+
+}
+#home::before{
+    content: "";
+    background:url(../icons/pexels.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 94%;
+    width:100%;
+    z-index:-2;
+    opacity:0.9;
+}
+#home h1{
+    color:#3195a0;
+    text-align: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
+
+
+}
+#home p{
+    color:#439ba5;
+    text-align: center;
+    font-size:1.2rem;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+/* Servies Box */
+#services{
+    margin:34px;
+    display:flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding:34px;
+    margin:6px;
+    border-radius: 20px;
+}
+#services .box img {
+    height:120px;
+    margin: 10px auto;
+    display:block;
+    border-radius:30px;
+}
+#services .box{
+    background-color: rgb(233, 231, 231);
+}
+#services .box p{
+    margin:10px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+/* Client Section  */
+
+#clients{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;;
+}
+
+#clients .img{
+
+    width:140px;
+}
+/* Contact Section  */
+#contact{
+    position:relative;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background:url(../icons/download-2.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px;
+}
+#contact-box textarea,#contact-box input{
+    width:100%;
+    padding:0.5rem;
+    font-size:1.2rem;
+    border-radius:20px;
+
+}
+#contact-box form{
+    width:40%;
+    font-size: 1.3rem;;
+}
+
+/* Footer Section  */
+footer{
+    padding:5px 20px;
+    background-color: black;
+    color:white;
+}
+/* Utility Class */
+.h-primary{
+    font-size:2.8rem;
+    padding:12px;
+    letter-spacing: 1px;;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.h-secondary{
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: azure;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    opacity:0.5;
+    margin:15px;
+}
+.btn:hover{
+    background-color:rgb(214, 148, 161);
+    opacity:1;
+    color:white;
+    border:2px solid rgb(214, 148, 161);
+
+}
+.center{
+    text-align:center;
+}
