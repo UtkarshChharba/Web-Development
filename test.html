@@ -1,60 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Pseudo Selectors</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <style media="screen">
-
-    body{
-      background-color:black;
-      color:white;
-      margin:0;
-      padding:0;
-      background:url("https://loremflickr.com/cache/resized/65535_51700636286_dc255b8c9e_k_1280_720_nofilter.jpg") no-repeat center center/cover;
-    }
-    .navigation{
-      font-size:20px;
-      display:flex;
-      margin:auto 0;
-    }
-    li{
-      list-style: none;
-      padding: 20px 20px;;
-    }
-    h3{
-      font-size: 4em;
-      font-family: 'Open Sans', sans-serif;
-    }
-    p{
-      text-align: center;;
-    }
-    section{
-      display:flex;
-      flex-direction:column;
-      margin:3px 23px;
-      align-items: center;
-      justify-content: center;
-    }
-  </style>
-  <body>
-    <header>
-      <nav class="navbar">
-        <ul class="navigation">
-          <li>Home</li>
-          <li>Google</li>
-          <li>This</li>
-          <li>Mail</li>
-        </ul>
-      </nav>
-      <section>
-        <h3>Welcome To Coding World</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae voluptatibus quasi quas molestiae nobis ullam recusandae aperiam voluptate facere? Eum consequuntur omnis ullam non deserunt expedita voluptatum cum, minus qui quo? Ratione, repudiandae nam.</p>
-      </section>
-      <hr>
-    </header>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body{
+   margin:0px;
+   margin-top:60px;
+   padding: 0px;
+}
+nav{
+   display: flex;
+   position: fixed;
+   top:0;
+   width: 100%;
+   background-color: rgb(251, 255, 196);
+   overflow: auto;
+   height: auto;
+}
+.left-links{
+   flex:1 1 10px;
+}
+.links {
+   display: inline-block;
+   text-align: center;
+   padding: 14px;
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   font-size: 17px;
+   font-weight: bolder;
+}
+.links:hover {
+   border-bottom: 2px solid purple;
+}
+.selected{
+   border-bottom: 2px solid purple;
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="left-links">
+<a class="links selected" href="#">Home</a>
+<a class="links" href="#"> Login</a>
+<a class="links" href="#"> Register</a>
+</div>
+<div class="right-links">
+<a class="links" href="#"> Contact Us</a>
+<a class="links" href="#">More Info</a>
+</div>
+</nav>
+<h1>Hover on the above links</h1>
+</body>
 </html>
